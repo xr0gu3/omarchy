@@ -47,6 +47,10 @@
       "format-alt": "{:%d %B W%V %Y}",
       "tooltip": false
     },
+    "hyprland/language": {
+      "format": "{short}",
+      "tooltip": true
+    },
     "network": {
       "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"],
       "format" : "{icon}",
