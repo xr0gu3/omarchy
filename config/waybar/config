@@ -7,14 +7,15 @@
       "hyprland/workspaces"
     ],
     "modules-center": [
-      "clock"
+      "hyprland/window"
     ],
     "modules-right": [
       "bluetooth",
       "network",
       "pulseaudio",
-      "cpu",
-      "battery",
+      "tray",
+      "hyprland/language",
+      "clock",
       "custom/power-menu"
     ],
     "hyprland/workspaces": {
@@ -41,11 +42,6 @@
         "5": []
       }
     },
-    "cpu": {
-      "interval": 5,
-      "format": "󰍛",
-      "on-click": "alacritty -e btop"
-    },
     "clock": {
       "format": "{:%A %H:%M}",
       "format-alt": "{:%d %B W%V %Y}",
@@ -63,28 +59,6 @@
       "interval": 3,
       "nospacing": 1,
       "on-click": "alacritty -e iwctl"
-    },
-    "battery": {
-      "format": "{capacity}% {icon}",
-      "format-discharging": "{icon}",
-      "format-charging":    "{icon}",
-      "format-plugged":     "",
-        "format-icons": {
-          "charging": [
-            "󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"
-          ],
-          "default": [
-            "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"
-          ]
-        },
-      "format-full": "Charged ",
-      "tooltip-format-discharging": "{power:>1.0f}W↓ {capacity}%",
-      "tooltip-format-charging": "{power:>1.0f}W↑ {capacity}%",
-      "interval": 5,
-      "states": {
-        "warning": 20,
-        "critical": 10
-      }
     },
     "bluetooth": {
       "format": "",
